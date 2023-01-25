@@ -1,0 +1,149 @@
+@font-face {
+  font-family: Minesweeper;
+  src: url("assets/fonts/mine-sweeper.ttf");
+}
+
+* {
+  font-family: "Minesweeper", sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: beige;
+}
+
+p {
+  font-size: 10px;
+}
+
+span {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+a:hover {
+  color: #222;
+}
+
+#game-container {
+  position: relative;
+
+  background-color: #ccc;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1rem;
+  padding: 1rem;
+
+  border-color: gray;
+  border-style: solid;
+  border-width: 32px 2px 2px 2px;
+  border-radius: 0.2rem;
+
+  box-shadow: 4px 4px #0005;
+}
+
+#game-container > h1 {
+  padding-bottom: 1rem;
+}
+
+#game-container > i {
+  color: white;
+}
+
+#game-container > .minimize {
+  position: absolute;
+  right: 70px;
+  top: -22px;
+}
+#game-container > .maximize {
+  position: absolute;
+  right: 40px;
+  top: -22px;
+}
+
+#game-container > .close {
+  position: absolute;
+  right: 10px;
+  top: -22px;
+}
+
+canvas {
+  display: block;
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer {
+  position: fixed;
+  width: 100vw;
+  height: 3rem;
+  background-color: #0005;
+
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings-title {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: red;
+}
+
+.settings-cols {
+  position: absolute;
+  left: 10px;
+  top: 40px;
+}
+
+.settings-rows {
+  position: absolute;
+  left: 10px;
+  top: 80px;
+}
+
+.settings-difficulty {
+  position: absolute;
+  left: 10px;
+  top: 120px;
+}
+
+#rules {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+  max-width: 10vw;
+}
+
+#rules > p:first-of-type {
+  color: red;
+}
