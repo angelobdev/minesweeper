@@ -9,4 +9,9 @@ Live demo can be found here: [DEMO](https://angelobdev.github.io/projects/minesw
 
 ---
 
+## Screenshot
+![Minesweeper](https://i.imgur.com/23iGz46.png)
+
+---
+
 Made with ❤️ by [angelobdev](https://github.com/angelobdev)
